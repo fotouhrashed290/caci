@@ -1,1 +1,186 @@
-const _0x161b32=_0x2cbe;(function(_0x40b0fc,_0x51938b){const _0x13914b=_0x2cbe,_0x2b773e=_0x40b0fc();while(!![]){try{const _0x566939=-parseInt(_0x13914b(0x1f2))/0x1*(parseInt(_0x13914b(0x1ff))/0x2)+-parseInt(_0x13914b(0x201))/0x3+parseInt(_0x13914b(0x1ee))/0x4*(parseInt(_0x13914b(0x1f6))/0x5)+parseInt(_0x13914b(0x206))/0x6+parseInt(_0x13914b(0x205))/0x7+parseInt(_0x13914b(0x1f5))/0x8*(-parseInt(_0x13914b(0x207))/0x9)+-parseInt(_0x13914b(0x209))/0xa*(-parseInt(_0x13914b(0x1f7))/0xb);if(_0x566939===_0x51938b)break;else _0x2b773e['push'](_0x2b773e['shift']());}catch(_0x2064ae){_0x2b773e['push'](_0x2b773e['shift']());}}}(_0x20fb,0x7703b),document[_0x161b32(0x1fa)](_0x161b32(0x1fb),function(){const _0x1a1007=_0x161b32,_0x28cc8f=document[_0x1a1007(0x1f1)]('prepTime'),_0x357305=document[_0x1a1007(0x1f1)](_0x1a1007(0x1f3));_0x28cc8f['addEventListener'](_0x1a1007(0x1ed),displayTotalPoints),_0x357305[_0x1a1007(0x1fa)](_0x1a1007(0x1ed),displayTotalPoints);}));function showLayer(_0x38077d,_0x1133bc){const _0x2f3441=_0x161b32,_0x101f7b=document[_0x2f3441(0x202)]('.'+_0x38077d);_0x101f7b&&(_0x101f7b[_0x2f3441(0x1f8)][_0x2f3441(0x1fc)]=_0x1133bc?_0x2f3441(0x1fe):'hidden',_0x101f7b[_0x2f3441(0x203)](_0x2f3441(0x200),_0x1133bc?_0x2f3441(0x1f0):_0x2f3441(0x1ef)));}function updateLayerVisibility(_0x1a10a2,_0x528466){const _0x386326=parseInt(_0x1a10a2);_0x528466>=0x1&&_0x528466<=0x7&&(showLayer('g'+_0x528466,_0x386326>=0x3),showLayer('yy'+_0x528466,_0x386326===0x2),showLayer('rr'+_0x528466,_0x386326===0x1)),displayTotalPoints();}function calculateQuestion8Points(){const _0x35cf7b=_0x161b32;let _0x2a7aac=document[_0x35cf7b(0x1f1)](_0x35cf7b(0x1f9))[_0x35cf7b(0x208)],_0x18e892=document['getElementById'](_0x35cf7b(0x1f3))['value'];if(_0x2a7aac==='')_0x2a7aac=0x96;if(_0x18e892==='')_0x18e892=0x96;const _0x1aa933=parseInt(_0x2a7aac)+parseInt(_0x18e892);let _0x2e94c4=0x0;if(_0x1aa933<=0x5)_0x2e94c4=0x9;else{if(_0x1aa933<=0xa)_0x2e94c4=0x8;else{if(_0x1aa933<=0x14)_0x2e94c4=0x7;else{if(_0x1aa933<=0x1e)_0x2e94c4=0x6;else{if(_0x1aa933<=0x3c)_0x2e94c4=0x5;else{if(_0x1aa933<=0x5a)_0x2e94c4=0x4;else{if(_0x1aa933<=0x78)_0x2e94c4=0x3;else{if(_0x1aa933<0xb4)_0x2e94c4=0x2;else _0x1aa933<=0x12c?_0x2e94c4=0x1:_0x2e94c4=0x0;}}}}}}}return _0x2e94c4;}function _0x20fb(){const _0x493f79=['prepTime','addEventListener','DOMContentLoaded','visibility','toFixed','visible','62642JJGSkK','data-visible','2024949KfEIle','querySelector','setAttribute','pointsCircle','3483123hfbCbi','2031426JyhxWC','18WQsnTY','value','3063820NjYnVw','input','100432ErEmZX','false','true','getElementById','16LBDDkw','analysisTime','textContent','2555976rlmsdY','170NbiJMK','22PPsjrV','style'];_0x20fb=function(){return _0x493f79;};return _0x20fb();}function _0x2cbe(_0x3fd416,_0x175088){const _0x20fb33=_0x20fb();return _0x2cbe=function(_0x2cbefa,_0x53f7a5){_0x2cbefa=_0x2cbefa-0x1ed;let _0x24aec4=_0x20fb33[_0x2cbefa];return _0x24aec4;},_0x2cbe(_0x3fd416,_0x175088);}function displayTotalPoints(){const _0x3fa427=_0x161b32;let _0x34e320=0x0;const _0x34c909=0x1e;for(let _0x121ab8=0x1;_0x121ab8<=0x7;_0x121ab8++){const _0x3e202c=document[_0x3fa427(0x202)]('select[name=\x22question'+_0x121ab8+'\x22]'),_0x65ebaf=parseInt(_0x3e202c[_0x3fa427(0x208)]);_0x65ebaf!==-0x1&&!isNaN(_0x65ebaf)&&(_0x34e320+=_0x65ebaf);}_0x34e320+=calculateQuestion8Points();const _0x4262c6=_0x34e320/_0x34c909*0x64;document[_0x3fa427(0x1f1)](_0x3fa427(0x204))[_0x3fa427(0x1f4)]=_0x4262c6[_0x3fa427(0x1fd)](0x0);}
+document.addEventListener("DOMContentLoaded", function () {
+    // Add event listeners to question 8 input fields (Sample preparation time and analysis time)
+    const prepTimeInput = document.getElementById('prepTime');
+    const analysisTimeInput = document.getElementById('analysisTime');
+
+    prepTimeInput.addEventListener('input', displayTotalPoints);
+    analysisTimeInput.addEventListener('input', displayTotalPoints);
+
+    // Add event listeners for group 3 (questions 3a, 3b, and 3c)
+    const question3a = document.querySelector(`select[name="question3a"]`);
+    const question3b = document.querySelector(`select[name="question3b"]`);
+    const question3c = document.querySelector(`select[name="question3c"]`);
+
+    question3a.addEventListener('change', handleGroup3Change);
+    question3b.addEventListener('change', handleGroup3Change);
+    question3c.addEventListener('change', handleGroup3Change);
+
+    // Add event listeners for group 4 (questions 4a, 4b, and 4c)
+    const question4a = document.querySelector(`select[name="question4a"]`);
+    const question4b = document.querySelector(`select[name="question4b"]`);
+    const question4c = document.querySelector(`select[name="question4c"]`);
+
+    question4a.addEventListener('change', handleGroup4Change);
+    question4b.addEventListener('change', handleGroup4Change);
+    question4c.addEventListener('change', handleGroup4Change);
+
+    // Add event listeners for questions 1 to 7
+    for (let i = 1; i <= 7; i++) {
+        const selectElement = document.querySelector(`select[name="question${i}"]`);
+        if (selectElement) {
+            selectElement.addEventListener('change', function () {
+                const points = parseInt(selectElement.value, 10) || 0;
+                updateLayerVisibility(points, i); // Update layer visibility
+                displayTotalPoints(); // Recalculate total points
+            });
+        }
+    }
+});
+
+function handleGroup3Change() {
+    const groupPoints = calculateGroup3Points();
+    updateLayerVisibility(groupPoints, 3); // Pass the raw total to update visibility
+    displayTotalPoints(); // Recalculate total points
+}
+
+function handleGroup4Change() {
+    const groupPoints = calculateGroup4Points();
+    updateLayerVisibility(groupPoints, 4); // Pass the raw total to update visibility
+    displayTotalPoints(); // Recalculate total points
+}
+
+function showLayer(layerName, isVisible) {
+    const layer = document.querySelector('.' + layerName);
+    if (layer) {
+        layer.style.visibility = isVisible ? 'visible' : 'hidden';
+        layer.setAttribute('data-visible', isVisible ? 'true' : 'false');
+    }
+}
+
+function updateLayerVisibility(selectedValue, questionNumber) {
+    const points = parseInt(selectedValue, 10);
+
+    if (questionNumber >= 1 && questionNumber <= 7) {
+        showLayer(`g${questionNumber}`, points >= 3); // green layer for points >= 3
+        showLayer(`yy${questionNumber}`, points === 2); // yellow layer for points == 2
+        showLayer(`rr${questionNumber}`, points === 1); // red layer for points == 1
+    }
+
+    // Special handling for question 3 group (3a, 3b, 3c)
+    if (questionNumber === 3) {
+        showLayer(`g3`, points >= 9); // green layer for total group points >= 9
+        showLayer(`yy3`, points >= 6 && points < 9); // yellow for 6-8 points
+        showLayer(`rr3`, points < 6); // red layer for total group points < 6
+    }
+
+    // Special handling for question 4 group (4a, 4b, 4c)
+    if (questionNumber === 4) {
+        showLayer(`g4`, points >= 9); // green layer for total group points >= 9
+        showLayer(`yy4`, points >= 6 && points < 9); // yellow for 6-8 points
+        showLayer(`rr4`, points < 6); // red layer for total group points < 6
+    }
+}
+
+function calculateGroup3Points() {
+    const question3a = parseInt(document.querySelector(`select[name="question3a"]`).value, 10) || 0;
+    const question3b = parseInt(document.querySelector(`select[name="question3b"]`).value, 10) || 0;
+    const question3c = parseInt(document.querySelector(`select[name="question3c"]`).value, 10) || 0;
+
+    // Calculate the total (sum of 3a, 3b, and 3c)
+    return question3a + question3b + question3c;
+}
+
+function calculateGroup4Points() {
+    const question4a = parseInt(document.querySelector(`select[name="question4a"]`).value, 10) || 0;
+    const question4b = parseInt(document.querySelector(`select[name="question4b"]`).value, 10) || 0;
+    const question4c = parseInt(document.querySelector(`select[name="question4c"]`).value, 10) || 0;
+
+    // Calculate the total (sum of 4a, 4b, and 4c)
+    return question4a + question4b + question4c;
+}
+
+function calculateQuestion8Points() {
+    let prepTime = document.getElementById('prepTime').value;
+    let analysisTime = document.getElementById('analysisTime').value;
+
+    if (prepTime === '') prepTime = 150;
+    if (analysisTime === '') analysisTime = 150;
+
+    const totalMinutes = parseInt(prepTime, 10) + parseInt(analysisTime, 10);
+
+    let question8Points = 0;
+    if (totalMinutes <= 5) {
+        question8Points = 6;
+    } else if (totalMinutes <= 10) {
+        question8Points = 5.5;
+    } else if (totalMinutes <= 20) {
+        question8Points = 5;
+    } else if (totalMinutes <= 30) {
+        question8Points = 4.5;
+    } else if (totalMinutes <= 60) {
+        question8Points = 4;
+    } else if (totalMinutes <= 90) {
+        question8Points = 3.5;
+    } else if (totalMinutes <= 120) {
+        question8Points = 3;
+    } else if (totalMinutes < 180) {
+        question8Points = 2.5;
+    } else if (totalMinutes <= 300) {
+        question8Points = 2;
+    } else if (totalMinutes > 300) {
+        question8Points = 1;
+    } else {
+        question8Points = 0;
+    }
+
+    return question8Points;
+}
+
+function displayTotalPoints() {
+    let totalPoints = 0;
+    const maxPoints = 27; // Updated maximum score: 15 for Q1, Q2, Q5-Q7 + 3 for Group 3 + 3 for Group 4 + 6 for Q8
+
+    console.log("Calculating total points...");
+    
+    // Loop through questions 1 to 7
+    for (let i = 1; i <= 7; i++) {
+        const selectElement = document.querySelector(`select[name="question${i}"]`);
+        if (selectElement) {
+            const points = parseInt(selectElement.value, 10) || 0;
+            console.log(`Question ${i} points:`, points);
+            totalPoints += points;
+        }
+    }
+
+    // Add the average points from group 3 (divide by 3 to scale to max of 3)
+    let group3Points = calculateGroup3Points() / 3;
+    group3Points = Math.max(0, group3Points); // Ensure no negative values
+    console.log("Group 3 Points (scaled):", group3Points);
+    totalPoints += group3Points;
+
+    // Add the average points from group 4 (divide by 3 to scale to max of 3)
+    let group4Points = calculateGroup4Points() / 3;
+    group4Points = Math.max(0, group4Points); // Ensure no negative values
+    console.log("Group 4 Points (scaled):", group4Points);
+    totalPoints += group4Points;
+
+    // Add the points from question 8 (total minutes)
+    let question8Points = calculateQuestion8Points();
+    console.log("Question 8 Points:", question8Points);
+    totalPoints += question8Points;
+
+    // Ensure totalPoints does not go negative
+    totalPoints = Math.max(0, totalPoints);
+    console.log("Final Total Points:", totalPoints);
+
+    // Calculate percentage
+    const percentage = ((totalPoints / maxPoints) * 100).toFixed(0);
+
+    // Update the score in the points circle
+    const pointsCircle = document.getElementById('pointsCircle');
+    if (pointsCircle) {
+        pointsCircle.textContent = `${percentage}`;
+    } else {
+        console.error("Element with ID 'pointsCircle' not found!");
+    }
+}
